@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</style>
+
+
+    <title>RentMeBike main</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="styles.css">  <!--to link with CSS-->
+</head>
+
+
+<body>
+
+
+ <header> 
+   <div class="container header-container"> 
+   <h1>
+         <img id="roll_number_for_img" src="assets/logo.svg" /> <!--assigning id for css-->
+         RentMeBike
+   </h1>
+
+    <nav>
+          <ul>
+            <li><a href="#home"> Home </a></li>
+              <li> <a href = "#about" > About RentMeBike </a> </li>
+              <li> <a href="#Service"> Service We Provide </a> </li>
+              <li> <a href= "#Contact"> Contact US </a></li>
+
+          </ul>
+    </nav>
+</div>
+
+    </header>
+
+
+
+
+<main class="main-grid"> <!--it tells the main content of the page. after header.-->
+
+    <!--first section is about grid-->
+<section id="home">
+  <!-- used for single topics like about me, contact us etc -->
+
+<div class="section-content">     <!--we will not use div rn as we have used directly #section h1, section p1, so its optional. -->       <!-- actually there is no need for div as we could use id section for styling but 
+                                   id section will style whole section but we want it to style seperately so we used div for its content to style seperately-->
+<h2>RentMeBike</h2>
+<p>Delivering affordable packages for those who can't afford lavish bikes</p>
+
+</div>
+
+<!--second section is about services-->
+</section>
+
+
+<section id="Service">
+            
+                <h2 class="h2">Our Services:</h2>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                         
+    <img src="assets/agriculture.svg" alt="Agriculture Icon" class="service-icon">
+    
+                        <h3>Easy Bike Rentals</h3>
+                        <p>We provide a fast and simple bike rental process. Just choose your bike, select your time, confirm your booking and you’re ready to ride. No long forms or waiting times.</p>
+                    </article>
+
+
+                    <article class="service-card">
+    <img src="assets/delivery.svg" alt="Delivery Icon" class="service-icon">
+  
+
+                        <h3>Pick-Up & Drop-Off Service</h3>
+                        <p>Choose your pickup point, and we’ll have the bike ready for you.
+                         Finish your ride? Drop it off at any of our designated locations quick and convenient.</p>
+                    </article>
+
+
+                    <article class="service-card">
+                       
+    <img src="assets/time.svg" alt="Environment Icon" class="service-icon">
+   
+
+                        <h3>24/7 Customer support</h3>
+                        <p>We’re always available to help you with bookings, problems, or emergencies. Our support team ensures you enjoy a safe and comfortable rental experience.</p>
+                    </article>
+
+                    <article class="service-card">
+                       
+
+                        
+    <img src="assets/environment.svg" alt="Environment Icon" class="service-icon">
+   
+
+                        <h3>Affordable Pricing</h3>
+                        <p>Our rental rates are budget-friendly with no hidden charges. You get clear pricing, complete transparency, and excellent value for money.</p>
+                    </article>
+
+                    <article class="service-card">
+                       
+    <img src="assets/download.svg" alt="Environment Icon" class="service-icon">
+   
+
+                        <h3>Flexible Rental Plans</h3>
+                        <p>Rent a bike hourly, daily, weekly, or monthly depending on your needs. Whether it’s a quick ride across town or a long-term requirement, we offer flexible plans for everyone.</p>
+                    </article>
+
+                    <article class="service-card">
+                       
+    <img src="assets/cycle.svg" alt="Environment Icon" class="service-icon">
+   
+
+                        <h3>Well-Maintained Bikes</h3>
+                        <p>Your safety is our top priority. All our bikes are regularly inspected, cleaned, and maintained so you always receive a smooth and reliable ride.</p>
+                    </article>
+
+                    
+
+
+                </div>
+            </div>
+
+
+        </section>
+<!--about us section-->
+
+  <section id="about">
+     <h2 class="h2">About Us:</h2>
+  <div class="container">
+   
+    <p>RentMeBike is a modern bike rental platform created to offer fast, safe, and budget friendly transportation for everyone. We understand the challenges of daily travel traffic, high costs, and unreliable transport so we built a service that gives you complete freedom on two wheels.</p>
+  </div>
+</section>
+
+<br>
+
+
+<!--for contact us-->
+  <section id="Contact">
+    
+    <h2 class="h2"> Join us:</h2>
+
+    <div class="container">
+
+       <fieldset>
+       <form action="nothing_here"  class="contact-form">
+<br>
+       <label class="labels" for="name"> Enter your first name:</label>
+       <input type="text" id="name" name="name" required  placeholder="eg: Arham "> <!--name used by browser to save the data input given by user--> 
+
+     <br><br>
+       <label class="labels" for="name"> Enter your second name:</label>
+       <input type="text" id="name" name="name" required placeholder="eg: Shakeel">
+
+            <br><br>
+       <label class="labels" for="name"> Enter your e-mail:</label>
+       <input type="text" id="name" name="name" required placeholder="eg: arhamshakeel@gmail.com">
+         <br>
+
+
+    <!-- Country Dropdown -->
+<fieldset>
+  <label for="country">Country:</label>
+  <select id="country" name="country" required>
+    <option value="">Select your country</option>
+    <option value="pakistan">Pakistan</option>
+    <option value="india">India</option>
+    <option value="usa">United States</option>
+    <option value="uk">United Kingdom</option>
+    <option value="canada">Canada</option>
+    <option value="australia">Australia</option>
+    <!-- Add more countries as needed -->
+  </select>
+</fieldset>
+
+<br>
+
+<!-- Address Input -->
+<fieldset>
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" placeholder="Enter your full address" required>
+</fieldset>
+
+<br>
+      <!--checkboxes-->
+      <fieldset>
+        <legend>Interests:</legend>
+
+
+        <label class="checkbox-container">Daily Commute
+  <input type="checkbox" name="interest" value="commute">
+  <span class="checkmark"></span>
+</label>
+          
+          
+        
+        <label class="checkbox-container">Weekend trips
+  <input type="checkbox" name="interest" value="cWeekend trips">
+  <span class="checkmark"></span>
+</label>
+         
+        <label class="checkbox-container">Adventure riding
+  <input type="checkbox" name="interest" value="Adventure riding">
+  <span class="checkmark"></span>
+</label>
+       
+         
+      
+
+        
+
+
+      </fieldset>
+      <br>
+
+      <!--plan-->
+       <fieldset>
+
+<legend>Preferred Plan:</legend>
+ <label class="radio-container">Basic
+          <input type="radio" name="plan" value="basic" required>
+          <span class="radiomark"></span>
+        </label>
+        <label class="radio-container">Premium
+          <input type="radio" name="plan" value="premium">
+          <span class="radiomark"></span>
+        </label>
+
+        
+       </fieldset>
+      <br>
+
+<!--region-->
+       <fieldset>
+
+
+       <legend for="region">Region:</legend>
+
+      <select id="region" name="region">
+        <option value="Middle-east">Middle-east</option>
+        <option value="europe">Europe</option>
+        <option value="asia">Asia</option>
+      </select>
+
+      
+      
+
+
+      </fieldset>
+
+
+  
+
+      <!--message-->
+<br>
+    <fieldset>
+      <label for="message">Comments:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+     </fieldset>
+
+     <br>
+
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+
+
+        </form>
+    
+    
+    
+    </div>
+
+
+  </section>      
+
+
+
+
+  
+
+</main>
+
+<footer>
+  <div class="container footer-container">
+    <p>&copy; 2025 RentMeBike. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+
+
+
+
+</html>
